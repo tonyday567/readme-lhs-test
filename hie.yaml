@@ -1,0 +1,4 @@
+cradle:
+  stack:
+    - path: "./app/readme-lhs-test.hs"
+      component: "readme-lhs-test:exe:readme-lhs-test"

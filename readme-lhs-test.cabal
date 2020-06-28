@@ -1,0 +1,35 @@
+cabal-version: 2.4
+name:          readme-lhs-test
+version:       0.0.1
+synopsis: See readme.md
+description: See readme.md for description.
+category: project
+author: Tony Day
+maintainer: tonyday567@gmail.com
+copyright: Tony Day (c) AfterTimes
+license: BSD-3-Clause
+homepage: https://github.com/tonyday567/readme-lhs-test#readme
+bug-reports: https://github.com/tonyday567/readme-lhs-test/issues
+build-type: Simple
+source-repository head
+  type: git
+  location: https://github.com/tonyday567/readme-lhs-test
+
+executable readme-lhs-test
+  main-is: readme-lhs-test.hs
+  hs-source-dirs: app
+  build-depends:
+    base >= 4.7 && < 5,
+    numhask-prelude >= 0.6
+  default-language: Haskell2010
+  default-extensions:
+    NegativeLiterals
+    NoImplicitPrelude
+    OverloadedStrings
+    UnicodeSyntax
+  ghc-options:
+    -funbox-strict-fields
+    -fforce-recomp
+    -threaded
+    -rtsopts
+    -with-rtsopts=-N
